@@ -625,13 +625,15 @@ html, body {
   position: relative;
   -webkit-transform: translateX(0);
   transform: translateX(0);
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
   -webkit-transition: .5s ease all;
   transition: .5s ease all;
   padding: 5% 0;
   /* Temp: Just spacing. */
 }
 
-/* line 23, ../_sass/_main.scss */
+/* line 25, ../_sass/_main.scss */
 .page {
   width: 100%;
   height: 100%;
@@ -640,34 +642,63 @@ html, body {
   padding: 15px;
 }
 
-/* line 31, ../_sass/_main.scss */
+/* line 33, ../_sass/_main.scss */
 #map-page {
-  width: 100%;
   left: 0;
 }
 
-/* line 36, ../_sass/_main.scss */
+/* line 37, ../_sass/_main.scss */
+#about-page {
+  top: -100%;
+  background-color: green;
+}
+
+/* line 42, ../_sass/_main.scss */
 #filter-page {
   right: -100%;
   background-color: orange;
 }
 
-/* line 41, ../_sass/_main.scss */
+/* line 47, ../_sass/_main.scss */
 #wheel-page {
   left: -100%;
   background-color: red;
 }
 
-/* line 46, ../_sass/_main.scss */
+/* line 52, ../_sass/_main.scss */
+.toggle-about {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: inline;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  z-index: 9999999999;
+}
+/* line 62, ../_sass/_main.scss */
+.toggle-about:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* line 68, ../_sass/_main.scss */
 #site-wrapper.show-wheel #site-canvas {
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
 }
 
-/* line 51, ../_sass/_main.scss */
+/* line 73, ../_sass/_main.scss */
 #site-wrapper.show-filter #site-canvas {
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
+}
+
+/* line 78, ../_sass/_main.scss */
+#site-wrapper.show-about #site-canvas {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
 }
 
 /* line 1, ../_sass/_footer.scss */

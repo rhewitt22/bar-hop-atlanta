@@ -14,6 +14,8 @@ html, body {
   position: relative;
   -webkit-transform: translateX(0);
   transform: translateX(0);
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
   -webkit-transition: .5s ease all;
   transition: .5s ease all;
 
@@ -29,8 +31,12 @@ html, body {
 }
 
 #map-page {
-  width: 100%;
   left: 0;
+}
+
+#about-page {
+  top: -100%;
+  background-color: green;
 }
 
 #filter-page {
@@ -43,6 +49,22 @@ html, body {
   background-color: red;
 }
 
+.toggle-about {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: inline;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  z-index: 9999999999;
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
 #site-wrapper.show-wheel #site-canvas {
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
@@ -51,4 +73,9 @@ html, body {
 #site-wrapper.show-filter #site-canvas {
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
+}
+
+#site-wrapper.show-about #site-canvas {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
 }

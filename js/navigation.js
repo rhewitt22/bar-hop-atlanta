@@ -14,6 +14,10 @@ $(function() {
         // Calling a function in case you want to expand upon this.
         toggleMap();
     });
+    $('.toggle-about').click(function() {
+        // Calling a function in case you want to expand upon this.
+        toggleAbout();
+    });
 });
 
 
@@ -21,7 +25,7 @@ $(function() {
 =            CUSTOM FUNCTIONS            =
 ========================================*/
 function toggleWheel() {
-    $('#site-wrapper').removeClass('show-filter');
+    $('#site-wrapper').removeClass('show-filter show-about');
     if ($('#site-wrapper').hasClass('show-wheel')) {
         // Do things on Nav Close
         $('#site-wrapper').removeClass('show-wheel');
@@ -33,7 +37,7 @@ function toggleWheel() {
     //$('#site-wrapper').toggleClass('show-nav');
 }
 function toggleFilter() {
-    $('#site-wrapper').removeClass('show-wheel');
+    $('#site-wrapper').removeClass('show-wheel show-about');
     if ($('#site-wrapper').hasClass('show-filter')) {
         // Do things on Nav Close
         $('#site-wrapper').removeClass('show-filter');
@@ -44,6 +48,18 @@ function toggleFilter() {
 
     //$('#site-wrapper').toggleClass('show-nav');
 }
+function toggleAbout() {
+    $('#site-wrapper').removeClass('show-filter show-wheel');
+    if ($('#site-wrapper').hasClass('show-about')) {
+        // Do things on Nav Close
+        $('#site-wrapper').removeClass('show-about');
+    } else {
+        // Do things on Nav Open
+        $('#site-wrapper').addClass('show-about');
+    }
+
+    //$('#site-wrapper').toggleClass('show-nav');
+}
 function toggleMap() {
-    $('#site-wrapper').removeClass('show-wheel show-filter');
+    $('#site-wrapper').removeClass('show-wheel show-filter show-about');
 }
