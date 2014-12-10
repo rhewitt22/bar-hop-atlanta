@@ -11,6 +11,7 @@ $(function() {
 function createMap() {
   return map = L.map('map-page', {
     attributionControl: false,
+    zoomControl: false,
     center: [33.779548, -84.386671],
     zoom: 12
   });
