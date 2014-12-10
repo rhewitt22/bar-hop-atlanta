@@ -1,0 +1,370 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.3625,
+          33.8301
+        ]
+      },
+      "properties": {
+        "name": "Painted Pin",
+        "neighborhood": "Buckhead",
+        "sports": true,
+        "cocktails": true,
+        "drafts": false,
+        "dancing": false,
+        "music": "Sometimes",
+        "smoking": false,
+        "games": [
+          "Darts",
+          "Shuffleboard",
+          "Bowling",
+          "Skeeball",
+          "Bocce",
+          "Ping Pong",
+          "Basketball",
+          "Jenga"
+        ],
+        "dinner": "Meh",
+        "website": "www.thepaintedpin.com"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.3603,
+          33.761
+        ]
+      },
+      "properties": {
+        "name": "Parish",
+        "neighborhood": "Inman Park",
+        "sports": false,
+        "cocktails": true,
+        "drafts": false,
+        "dancing": false,
+        "music": false,
+        "smoking": false,
+        "games": [],
+        "dinner": true,
+        "website": "www.parishatl.com"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.373,
+          33.7541
+        ]
+      },
+      "properties": {
+        "name": "Joystick",
+        "neighborhood": "Edgewood",
+        "sports": false,
+        "cocktails": true,
+        "drafts": false,
+        "dancing": false,
+        "music": false,
+        "smoking": "",
+        "games": [
+          "Arcade Games"
+        ],
+        "dinner": false,
+        "website": "www.joystickgamebar.com"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.3797,
+          33.9078
+        ]
+      },
+      "properties": {
+        "name": "Taco Mac Prado",
+        "neighborhood": "Roswell",
+        "sports": true,
+        "cocktails": false,
+        "drafts": true,
+        "dancing": false,
+        "music": false,
+        "smoking": false,
+        "games": [],
+        "dinner": "Meh",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.3831,
+          33.8425
+        ]
+      },
+      "properties": {
+        "name": "Smokebelly",
+        "neighborhood": "Buckhead",
+        "sports": true,
+        "cocktails": true,
+        "drafts": true,
+        "dancing": false,
+        "music": "Sometimes",
+        "smoking": false,
+        "games": [],
+        "dinner": true,
+        "website": "www.smokebellybbq.com"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.2957,
+          33.7752
+        ]
+      },
+      "properties": {
+        "name": "Brick Store Pub",
+        "neighborhood": "Decatur",
+        "sports": false,
+        "cocktails": "",
+        "drafts": true,
+        "dancing": false,
+        "music": false,
+        "smoking": false,
+        "games": [],
+        "dinner": true,
+        "website": "www.brickstorepub.com"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.3496,
+          33.7652
+        ]
+      },
+      "properties": {
+        "name": "Porter Beer Bar",
+        "neighborhood": "Little 5 Points",
+        "sports": "",
+        "cocktails": "",
+        "drafts": true,
+        "dancing": "",
+        "music": "",
+        "smoking": "",
+        "games": [],
+        "dinner": "",
+        "website": "www.theporterbeerbar.com"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.3759,
+          33.8401
+        ]
+      },
+      "properties": {
+        "name": "Establishment",
+        "neighborhood": "Buckhead",
+        "sports": false,
+        "cocktails": true,
+        "drafts": false,
+        "dancing": false,
+        "music": false,
+        "smoking": false,
+        "games": [],
+        "dinner": "",
+        "website": "www.estbuckhead.com"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.3725,
+          33.7542
+        ]
+      },
+      "properties": {
+        "name": "Edgewood Corner Tavern",
+        "neighborhood": "Edgewood",
+        "sports": "",
+        "cocktails": "",
+        "drafts": "",
+        "dancing": "",
+        "music": "",
+        "smoking": true,
+        "games": [
+          "Pool, Darts"
+        ],
+        "dinner": "",
+        "website": "www.thecornertavern.com"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.3725,
+          33.7542
+        ]
+      },
+      "properties": {
+        "name": "Mother",
+        "neighborhood": "Edgewood",
+        "sports": "",
+        "cocktails": "",
+        "drafts": "",
+        "dancing": "",
+        "music": "",
+        "smoking": "",
+        "games": [],
+        "dinner": "",
+        "website": "www.mother447.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.4121,
+          33.7858
+        ]
+      },
+      "properties": {
+        "name": "Ormsbys",
+        "neighborhood": "Westside",
+        "sports": false,
+        "cocktails": true,
+        "drafts": false,
+        "dancing": false,
+        "music": false,
+        "smoking": false,
+        "games": [
+          "Pool",
+          "Darts",
+          "Shuffleboard",
+          "Bocce"
+        ],
+        "dinner": "",
+        "website": "www.ormsbysatlanta.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.2951,
+          33.7742
+        ]
+      },
+      "properties": {
+        "name": "Paper Plane",
+        "neighborhood": "Decatur",
+        "sports": false,
+        "cocktails": true,
+        "drafts": "",
+        "dancing": "",
+        "music": "",
+        "smoking": "",
+        "games": [],
+        "dinner": "",
+        "website": "www.the-paper-plane.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.4121,
+          33.7867
+        ]
+      },
+      "properties": {
+        "name": "JCT Kitchen Bar",
+        "neighborhood": "Westside",
+        "sports": false,
+        "cocktails": true,
+        "drafts": false,
+        "dancing": false,
+        "music": true,
+        "smoking": false,
+        "games": [],
+        "dinner": "",
+        "website": "www.jctkitchen.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.2951,
+          33.7742
+        ]
+      },
+      "properties": {
+        "name": "Victory",
+        "neighborhood": "Decatur",
+        "sports": false,
+        "cocktails": true,
+        "drafts": false,
+        "dancing": false,
+        "music": false,
+        "smoking": false,
+        "games": [
+          "Ping Pong"
+        ],
+        "dinner": "",
+        "website": "www.vicsandwich.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.4093,
+          33.7787
+        ]
+      },
+      "properties": {
+        "name": "Bartaco",
+        "neighborhood": "Westside",
+        "sports": false,
+        "cocktails": true,
+        "drafts": false,
+        "dancing": false,
+        "music": false,
+        "smoking": false,
+        "games": [],
+        "dinner": true,
+        "website": "www.bartaco.com/"
+      }
+    }
+  ]
+}

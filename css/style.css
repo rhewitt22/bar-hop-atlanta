@@ -605,39 +605,64 @@ th {
   padding: 0;
 }
 
-/* line 1, ../_sass/_footer.scss */
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-/* line 6, ../_sass/_footer.scss */
-.footer-links {
-  margin: 0;
-  padding: 0;
-  border: 0;
+/* line 1, ../_sass/_main.scss */
+.site-wrapper {
+  position: relative;
   overflow: hidden;
-  *zoom: 1;
-}
-/* line 49, ../../../../../Users/royhewitt/.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/typography/lists/_inline-block-list.scss */
-.footer-links li {
-  list-style-image: none;
-  list-style-type: none;
-  margin-left: 0;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  *zoom: 1;
-  *display: inline;
-  white-space: nowrap;
+  width: 100%;
+  height: 500px;
 }
 
-/* line 10, ../_sass/_footer.scss */
-.footer-link {
-  background-color: black;
-  width: 33.333%;
-  height: 75px;
-  margin: 0;
-  padding: 0;
+/* line 9, ../_sass/_main.scss */
+.site-canvas {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+  padding: 5% 0;
+  /* Temp: Just spacing. */
+}
+
+/* line 21, ../_sass/_main.scss */
+.page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  padding: 15px;
+}
+
+/* line 29, ../_sass/_main.scss */
+#map-page {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background-color: blue;
+}
+
+/* line 36, ../_sass/_main.scss */
+#filter-page {
+  right: -100%;
+  background-color: orange;
+}
+
+/* line 41, ../_sass/_main.scss */
+#wheel-page {
+  left: -100%;
+  background-color: red;
+}
+
+/* line 46, ../_sass/_main.scss */
+.site-wrapper.show-wheel .site-canvas {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+/* line 51, ../_sass/_main.scss */
+.site-wrapper.show-filter .site-canvas {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
 }

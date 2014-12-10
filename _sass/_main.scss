@@ -1,0 +1,54 @@
+.site-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+
+  height: 500px;
+}
+
+.site-canvas {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+
+  padding: 5% 0; /* Temp: Just spacing. */
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  padding: 15px;
+}
+
+#map-page {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background-color: blue;
+}
+
+#filter-page {
+  right: -100%;
+  background-color: orange;
+}
+
+#wheel-page {
+  left: -100%;
+  background-color: red;
+}
+
+.site-wrapper.show-wheel .site-canvas {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.site-wrapper.show-filter .site-canvas {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
