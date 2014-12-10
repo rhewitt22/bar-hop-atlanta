@@ -606,14 +606,19 @@ th {
 }
 
 /* line 1, ../_sass/_main.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 4, ../_sass/_main.scss */
 #site-wrapper {
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 500px;
+  height: 80%;
 }
 
-/* line 9, ../_sass/_main.scss */
+/* line 11, ../_sass/_main.scss */
 #site-canvas {
   width: 100%;
   height: 100%;
@@ -626,7 +631,7 @@ th {
   /* Temp: Just spacing. */
 }
 
-/* line 21, ../_sass/_main.scss */
+/* line 23, ../_sass/_main.scss */
 .page {
   width: 100%;
   height: 100%;
@@ -635,32 +640,31 @@ th {
   padding: 15px;
 }
 
-/* line 29, ../_sass/_main.scss */
+/* line 31, ../_sass/_main.scss */
 #map-page {
   width: 100%;
-  height: 100%;
   left: 0;
 }
 
-/* line 35, ../_sass/_main.scss */
+/* line 36, ../_sass/_main.scss */
 #filter-page {
   right: -100%;
   background-color: orange;
 }
 
-/* line 40, ../_sass/_main.scss */
+/* line 41, ../_sass/_main.scss */
 #wheel-page {
   left: -100%;
   background-color: red;
 }
 
-/* line 45, ../_sass/_main.scss */
+/* line 46, ../_sass/_main.scss */
 #site-wrapper.show-wheel #site-canvas {
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
 }
 
-/* line 50, ../_sass/_main.scss */
+/* line 51, ../_sass/_main.scss */
 #site-wrapper.show-filter #site-canvas {
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
@@ -668,9 +672,10 @@ th {
 
 /* line 1, ../_sass/_footer.scss */
 footer {
+  height: 20%;
   text-align: center;
 }
-/* line 3, ../_sass/_footer.scss */
+/* line 4, ../_sass/_footer.scss */
 footer button {
   width: 32%;
   margin: 0;
