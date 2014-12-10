@@ -1,0 +1,17 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.footer-links {
+  @include inline-block-list;
+}
+
+.footer-link {
+  // @include border-top-radius;
+  background-color: black;
+  width: 33.333%;
+  height: 75px;
+  margin: 0;
+  padding: 0;
+}
