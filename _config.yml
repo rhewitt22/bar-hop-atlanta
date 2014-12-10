@@ -1,0 +1,13 @@
+# Site settings
+title: Bar Hop Atlanta
+description: > # this means to ignore newlines until "baseurl:"
+  Bar Hop Atlanta seeks to connect you with the right bar for whatever
+  mood you're in.  Search by location/neighborhood or type of bar.
+baseurl: "" # the subpath of your site, e.g. /blog/
+
+email: royhewitt07@gmail.com
+twitter_username: r0yhewitt
+github_username:  rhewitt22
+
+# Build settings
+markdown: kramdown
