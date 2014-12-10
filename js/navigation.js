@@ -10,6 +10,10 @@ $(function() {
         // Calling a function in case you want to expand upon this.
         toggleFilter();
     });
+    $('.toggle-map').click(function() {
+        // Calling a function in case you want to expand upon this.
+        toggleMap();
+    });
 });
 
 
@@ -17,24 +21,29 @@ $(function() {
 =            CUSTOM FUNCTIONS            =
 ========================================*/
 function toggleWheel() {
-    if ($('.site-wrapper').hasClass('show-wheel')) {
+    $('#site-wrapper').removeClass('show-filter');
+    if ($('#site-wrapper').hasClass('show-wheel')) {
         // Do things on Nav Close
-        $('.site-wrapper').removeClass('show-wheel');
+        $('#site-wrapper').removeClass('show-wheel');
     } else {
         // Do things on Nav Open
-        $('.site-wrapper').addClass('show-wheel');
+        $('#site-wrapper').addClass('show-wheel');
     }
 
     //$('#site-wrapper').toggleClass('show-nav');
 }
 function toggleFilter() {
-    if ($('.site-wrapper').hasClass('show-filter')) {
+    $('#site-wrapper').removeClass('show-wheel');
+    if ($('#site-wrapper').hasClass('show-filter')) {
         // Do things on Nav Close
-        $('.site-wrapper').removeClass('show-filter');
+        $('#site-wrapper').removeClass('show-filter');
     } else {
         // Do things on Nav Open
-        $('.site-wrapper').addClass('show-filter');
+        $('#site-wrapper').addClass('show-filter');
     }
 
     //$('#site-wrapper').toggleClass('show-nav');
+}
+function toggleMap() {
+    $('#site-wrapper').removeClass('show-wheel show-filter');
 }
