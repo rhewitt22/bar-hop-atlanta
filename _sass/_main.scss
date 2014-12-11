@@ -34,8 +34,13 @@ html, body {
   left: 0;
 }
 
-#about-page {
+#nearest-page {
   top: -100%;
+  background-color: purple;
+}
+
+#about-page {
+  top: -200%;
   background-color: green;
 }
 
@@ -76,6 +81,11 @@ html, body {
 }
 
 #site-wrapper.show-about #site-canvas {
+  -webkit-transform: translateY(200%);
+  transform: translateY(200%);
+}
+
+#site-wrapper.show-nearest #site-canvas {
   -webkit-transform: translateY(100%);
   transform: translateY(100%);
 }

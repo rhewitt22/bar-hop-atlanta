@@ -39,9 +39,3 @@ function getLocation(map, bars) {
     console.log(leafletKnn(bars).nearest(e.latlng, 5));
   });  
 }
-
- 
-function onLocationFound(e) {
-    // create a marker at the users "latlng" and add it to the map
-    L.marker(e.latlng).addTo(mymap);
-}
