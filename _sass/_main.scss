@@ -28,6 +28,7 @@ html, body {
   position: absolute;
   top: 0;
   padding: 15px;
+  overflow: scroll;
 }
 
 #map-page {
@@ -36,22 +37,22 @@ html, body {
 
 #nearest-page {
   top: -100%;
-  background-color: purple;
+  background-color: #00214F;
 }
 
 #about-page {
   top: -200%;
-  background-color: green;
+  background-color: #00716C;
 }
 
 #filter-page {
   right: -100%;
-  background-color: orange;
+  background-color: #DDB700;
 }
 
 #wheel-page {
   left: -100%;
-  background-color: red;
+  background-color: #A1A5FF;
 }
 
 .toggle-about {

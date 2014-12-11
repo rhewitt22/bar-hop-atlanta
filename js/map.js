@@ -7,6 +7,8 @@ $(function() {
 
   map = createMap();
   bars = addLayers(map, data);
+
+  $('.toggle-nearest').on('click', getLocation(map, bars));
 });
 
 function createMap() {
@@ -28,7 +30,7 @@ function addLayers(map, data) {
 
   var bars = L.geoJson(data).addTo(map);
   map.fitBounds(bars.getBounds());
-  getLocation(map, bars);
+  
 
   return bars;
 }
@@ -37,5 +39,19 @@ function getLocation(map, bars) {
   map.locate();
   map.on('locationfound', function(e) {
     console.log(leafletKnn(bars).nearest(e.latlng, 5));
+    toggleNearest();
   });  
+}
+
+function toggleNearest() {
+  $('#site-wrapper').removeClass('show-filter show-wheel');
+  if ($('#site-wrapper').hasClass('show-nearest')) {
+      // Do things on Nav Close
+      $('#site-wrapper').removeClass('show-nearest');
+  } else {
+      // Do things on Nav Open
+      $('#site-wrapper').addClass('show-nearest');
+  }
+
+  //$('#site-wrapper').toggleClass('show-nav');
 }

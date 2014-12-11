@@ -18,10 +18,10 @@ $(function() {
         // Calling a function in case you want to expand upon this.
         toggleAbout();
     });
-    $('.toggle-nearest').click(function() {
-        // Calling a function in case you want to expand upon this.
-        toggleNearest();
-    });
+    // $('.toggle-nearest').click(function() {
+    //     // Calling a function in case you want to expand upon this.
+    //     toggleNearest();
+    // });
 });
 
 
