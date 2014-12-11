@@ -2,10 +2,11 @@
 ---
 $(function() {
   var map,
-      data = {{ site.data.bars | jsonify }};
+      data = {{ site.data.bars | jsonify }},
+      bars;
 
   map = createMap();
-  addLayers(map, data);
+  bars = addLayers(map, data);
 });
 
 function createMap() {
@@ -26,6 +27,21 @@ function addLayers(map, data) {
   }).addTo(map);
 
   var bars = L.geoJson(data).addTo(map);
-
   map.fitBounds(bars.getBounds());
+  getLocation(map, bars);
+
+  return bars;
+}
+
+function getLocation(map, bars) {
+  map.locate();
+  map.on('locationfound', function(e) {
+    console.log(leafletKnn(bars).nearest(e.latlng, 5));
+  });  
+}
+
+ 
+function onLocationFound(e) {
+    // create a marker at the users "latlng" and add it to the map
+    L.marker(e.latlng).addTo(mymap);
 }
