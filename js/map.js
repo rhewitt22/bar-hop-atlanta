@@ -5,12 +5,19 @@ $(function() {
       data = {{ site.data.bars | jsonify }},
       bars,
       source = $('#template').html(),
-      template = Handlebars.compile(source);
+      template = Handlebars.compile(source)
+      $toggleNearest = $('.toggle-nearest');
 
   map = createMap();
   bars = addLayers(map, data);
 
-  $('.toggle-nearest').on('click', getLocation(map, bars, template));
+  $toggleNearest.one('click', function () {
+    $toggleNearest.html('Nearest');
+    getLocation(map, bars, template);
+  });
+  $toggleNearest.click(function() {
+    toggleNearest();
+  });
 });
 
 function createMap() {
@@ -40,9 +47,9 @@ function getLocation(map, bars, template) {
   map.locate();
   map.on('locationfound', function(e) {
     var nearest = leafletKnn(bars).nearest(e.latlng, 5);
-    $('#nearest-results').append(template(nearest));
-    console.log(nearest);
-    toggleNearest();
+    $('#nearest-results').fadeOut(500, function() {
+      $(this).html(template(nearest)).fadeIn();
+    });
   });  
 }
 
