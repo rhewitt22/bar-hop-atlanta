@@ -8,7 +8,7 @@ layout: default
   <div id="site-canvas">
     <div class="page" id="nearest-page">
       <h1>Nearest</h1>
-      <div class="nearest-results"></div>
+      <div id="nearest-results"></div>
     </div>
     <div class="page" id="about-page">
       <h1>About</h1>
@@ -26,3 +26,11 @@ layout: default
     </div>
   </div>
 </div>
+
+{% raw %}
+<script id="template" type="text/x-handlebars-template">
+  {{#each this}}
+  <li>{{ layer.feature.properties.name }}</li>
+  {{/each}}
+</script>
+{% endraw %}
